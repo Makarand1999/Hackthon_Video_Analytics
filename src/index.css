@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(90deg, #E0EAFC 0%, #CFDEF3 100%);
+  font-family: 'Poppins', sans-serif;
+}
