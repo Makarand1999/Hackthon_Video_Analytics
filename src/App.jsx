@@ -4,14 +4,18 @@ import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Reports from "./pages/Reports";
 import Analyzer from "./pages/Analyzer";
+import { useState } from "react";
 
 export default function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+const toggleSidebar = () => setSidebarOpen((prev) => !prev);
   return (
-    <div className="h-screen p-4">
-      <Header />
+    <div className="h-screen lg:p-3 p-2 scroll-hidden">
+      <Header toggleSidebar={toggleSidebar} />
       <div className="flex mt-2">
         <div className="h-[88vh]">
-          <Sidebar />
+         <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
         </div>
         <div className="pl-4 w-full">
           <Routes>

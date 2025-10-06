@@ -27,3 +27,16 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #3b82f6, #2563eb);
 }
+/* global.css */
+.app-zoom {
+  zoom: 0.75; /* 75% */
+  transform-origin: 0 0; /* Ensure scaling from top-left */
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
