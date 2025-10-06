@@ -28,7 +28,7 @@ const Dashboard = () => {
   return (
     <section className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3 bg-[#f5f8ff] p-4 rounded-xl">
   {/* Upload Banner */}
-  <div className="bg-gradient-to-r from-[#e9d5ff] via-[#fecdd3] to-[#fde68a] p-4 rounded-2xl shadow-md relative flex flex-col justify-between">
+  <div className="bg-gradient-to-r from-[#e9d5ff] via-[#fecdd3] to-[#fde68a] p-4 rounded-2xl shadow-md relative flex flex-col justify-between pb-12">
     <h2 className="text-xl font-bold mb-1">Upload & Analyze Creative Video</h2>
     <p className="text-gray-700 text-xs md:text-sm">
       Let AI analyze your video for emotional tone, brand moments, and narrative structure.

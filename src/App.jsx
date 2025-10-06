@@ -17,7 +17,7 @@ const toggleSidebar = () => setSidebarOpen((prev) => !prev);
         <div className="h-[88vh]">
          <Sidebar isOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
         </div>
-        <div className="pl-4 w-full">
+        <div className="lg:pl-4 w-full">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/reports" element={<Reports />} />

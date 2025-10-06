@@ -26,7 +26,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       )}
 
       <aside
-        className={`lg:rounded-3xl fixed lg:static left-0 top-0 z-30 h-full w-52 lg:w-14 flex flex-col items-center py-5 shadow-md bg-white transition-transform duration-300
+        className={`lg:rounded-3xl fixed lg:static left-0 top-0 z-30 h-full w-14 lg:w-14 flex flex-col items-center py-5 shadow-md bg-white transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
       >
         <nav className="flex-1 p-1 space-y-6 w-full flex flex-col items-center">
