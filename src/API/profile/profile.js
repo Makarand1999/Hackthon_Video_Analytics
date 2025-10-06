@@ -1,7 +1,7 @@
 const profile = {
-    dev:"https://sanket101.pythonanywhere.com",
+    dev:"http://172.20.1.80:5001",
     //dev:"http://192.168.1.7:5000",
-    prod:"https://api.example.com",
+    prod:"https://sanket101.pythonanywhere.com",
     Test:"https://staging.api.example.com",
     getBaseUrl: function() {
         return process.env.NODE_ENV === 'production' ? this.prod : 
