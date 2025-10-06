@@ -1,5 +1,6 @@
 import React from "react";
 import { Menu } from "lucide-react";
+import LogoImge from '../assets/Logo.png'
 
 const Header = ({ toggleSidebar }) => {
   return (
@@ -15,26 +16,12 @@ const Header = ({ toggleSidebar }) => {
         </button>
 
         {/* Logo */}
-        <div className="text-lg font-semibold">Logo</div>
-
-        {/* Navigation links - hidden on mobile */}
-        <nav className="hidden lg:flex gap-3 text-gray-600 font-medium text-sm">
-          <a href="#" className="text-black hover:text-blue-600">
-            Dashboard
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
-            Reports
-          </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
-            Analyzer
-          </a>
-        </nav>
+        <div className="text-lg font-semibold flex gap-[5px] items-center justify-center"><img className="h-7" src={LogoImge} alt="" />Video Analyser</div>
       </div>
-
       {/* Right section */}
       <div className="flex items-center gap-3">
         <img
-          src="https://flagcdn.com/us.svg"
+          src="https://flagcdn.com/in.svg"
           alt="flag"
           className="w-5 h-5 rounded-full"
         />
