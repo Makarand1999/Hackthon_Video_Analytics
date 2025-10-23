@@ -30,9 +30,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
       >
         <nav className="flex-1 p-1 space-y-6 w-full flex flex-col items-center">
-          <Link to="/" className={linkClass("/")}>
+          <Link to="/dashboard" className={linkClass("/")}>
             <button className="rounded-xl bg-white w-full h-[44px] flex items-center justify-center">
-              {pathname === "/" ? (
+              {pathname === "/dashboard" ? (
                 <img src={DashboardIcon} alt="" className="w-5 h-5" />
               ) : (
                 <img src={DashboardInactivateIcon} alt="" className="w-5 h-5" />
